@@ -9,10 +9,9 @@ app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-app.get('download',function(req,res){
+app.get('/download',function(req,res){
     res.download(__dirname +'/download/test.jpg','test.jpg');
 });
-
 
 
 const PORT = process.env.PORT || 3000;
