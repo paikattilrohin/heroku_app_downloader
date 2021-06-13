@@ -4,13 +4,16 @@ var http = require('http').Server(app)
 const path = require('path');
 
 
+var htmlPath = path.join(__dirname, 'html');
+
+app.use(express.static(htmlPath));
 //Using direct file URL
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, '/index.html'));
+    res.sendFile(path.join(__dirname, '/html/index.html'));
 });
 
 app.get('/download',function(req,res){
-    res.download(__dirname +'/download/test.jpg','test.jpg');
+    res.download(__dirname +'/download/','test/');
 });
 
 
