@@ -13,7 +13,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/download',function(req,res){
-    res.download(__dirname +'/download/','test/');
+    res.download(__dirname +'/download/test.jpg','download.jpg');
 });
 
 
