@@ -4,7 +4,7 @@
   "description": "make apps available for friends",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "git add *; git commit -m 'new changes'; git push;"
   },
   "repository": {
     "type": "git",
