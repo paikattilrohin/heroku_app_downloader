@@ -13,7 +13,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/download',function(req,res){
-    res.download(__dirname +'/download/test.jpg','download.jpg');
+    res.download(__dirname +'/download/plugin.zip','video_sync_extension.zip');
 });
 
 
