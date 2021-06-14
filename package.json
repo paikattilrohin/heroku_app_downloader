@@ -4,7 +4,7 @@
   "description": "make apps available for friends",
   "main": "index.js",
   "scripts": {
-    "test": "zip -r -j /Users/hobonobleXD/Desktop/Code_Base/heroku_app_downloader/download/video_sync_plugin.zip /Users/hobonobleXD/Desktop/Code_Base/video_sync_extension/  --exclude=*.git* --exclude=*.DS_Store* ; git add *; git commit -m 'new changes';git push;"
+    "test": "cd /Users/hobonobleXD/Desktop/Code_Base/video_sync_extension/; zip -r -D video_sync_extension.zip * --exclude=*.git* --exclude=*.DS_Store*; cp /Users/hobonobleXD/Desktop/Code_Base/video_sync_extension/video_sync_extension.zip /Users/hobonobleXD/Desktop/Code_Base/heroku_app_downloader/download/; cd . ;"
   },  
   "repository": {
     "type": "git",
