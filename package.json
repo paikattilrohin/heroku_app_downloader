@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cd /Users/hobonobleXD/Desktop/Code_Base/video_sync_extension/; zip -r -D video_sync_extension.zip * --exclude=*.git* --exclude=*.DS_Store*; cp /Users/hobonobleXD/Desktop/Code_Base/video_sync_extension/video_sync_extension.zip /Users/hobonobleXD/Desktop/Code_Base/heroku_app_downloader/download/; rm video_sync_extension.zip ;cd - ; git add *; git commit -m 'push new extension changes'; git push"
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paikattilrohin/heroku_app_downloader.git"
